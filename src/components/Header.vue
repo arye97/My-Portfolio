@@ -26,7 +26,7 @@
             <b-navbar-item tag="div">
                 <div class="buttons">
                     <b-button tag="a"
-                              href="Ryan_Franks_CV.pdf" download
+                              href="https://drive.google.com/file/d/1u_Rm0TnquIawEn3ZuaihG-bLmnP_Rhn3/view?usp=sharing" download
                               type="is-danger" outlined>
                         My CV
                     </b-button>

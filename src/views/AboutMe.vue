@@ -1,17 +1,19 @@
 <template>
-
-
     <b-jumbotron>
         <template v-slot:header>
-            <h1 id="intro-header">Hi! I'm Ryan Franks</h1>
+            <h1 id="intro-header">Hi! I'm Ryan</h1>
         </template>
-        <hr class="my-4">
         <p id="description">
-            I'm studying towards a BSc in Computer Science at University of Canterbury, due to graduate at the end of 2020.-->
-            Through my degree I've found out how fun and fulfilling full-stack development is, and want to pursue this in my career.
-            This portfolio shows off the full-stack work I've done while at university(, and anything else I've hopefully done on the side).
+            I'm studying towards a BSc in Computer Science at University of Canterbury, due to graduate at the end of 2020.
+            Over the last year I've been able to work on a few full-stack projects, and I've realised full-stack is the career
+            path I want to pursue.
+            <br/><br/>
+            This portfolio exists to show the work I've done with web technologies like VueJS and Java Spring.
+            <br/>
+            <br/>
+            Ryan Franks
         </p>
-        <br/><br/><br/><br/><br/><br/>
+        <br/>
         <ul id="avatar-list">
             <li id="github-avatar">
                 <a href="https://github.com/arye97">
@@ -29,7 +31,6 @@
                 </a>
             </li>
         </ul>
-
 
     </b-jumbotron>
 
@@ -56,7 +57,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #d89351;
+    color: #db6b84;
 }
 
 #intro-header {
@@ -68,14 +69,13 @@ export default {
     margin-left: 25%;
     margin-right: 25%;
     font-size: 120%;
-    /*font-family: FuturaLT-Heavy, Helvetica, Arial, sans-serif;*/
 }
 
 hr {
     padding-left: 30%;
     height: 10px;
     width: 70%;
-    background-color: #0b232d;
+    background-color: #db6b84;
     border-radius: 5px;
 }
 

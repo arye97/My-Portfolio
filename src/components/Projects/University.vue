@@ -5,15 +5,13 @@
             <br/><br/><br/><br/><br/><br/>
         </section>
         <section class="window">
-            <div class="container window">
+            <div class="window">
                 <br/>
-                <br/>
-                <b-jumbotron>
                     <div>
                         <b-card-group deck>
-                            <b-card class="cards" title="Footsteps" :img-src="require('../../assets/footstepslogin.png')" img-alt="Image" img-top>
+                            <b-card class="cards" title="Footsteps" sub-title="Want to plan your next mountain hike, pub crawl or fun run like you're Michael Scott? Use Footsteps!"
+                                    :img-src="require('../../assets/footstepslogin.png')" img-alt="Image" img-top>
                                 <b-card-text>
-                                    Want to plan your next mountain hike, pub crawl or fun run like you're Michael Scott? Use Footsteps!
                                     <hr/>
                                     A year-long software engineering group project using Agile methods. Programmed in VueJS and
                                     Java with Spring Boot.
@@ -28,9 +26,8 @@
                                 </template>
                             </b-card>
 
-                            <b-card class="cards" title="Petitions (Client)" :img-src="require('../../assets/petitionslayout.png')" img-alt="Image" img-top>
+                            <b-card class="cards" title="Petitions (Client)" sub-title="Sign for your future with Petitions" :img-src="require('../../assets/petitionslayout.png')" img-alt="Image" img-top>
                                 <b-card-text>
-                                    Sign for your future with <strong>Petitions</strong>
                                     <hr/>
                                     A client for a Petitions website written in VueJS using the Buefy component library.
                                     Using a RESTful API written in NodeJS.
@@ -43,10 +40,10 @@
                             </b-card>
                         </b-card-group>
                     </div>
-                </b-jumbotron>
             </div>
         <br/>
         </section>
+        <br/>
     </div>
 </template>
 
@@ -76,8 +73,14 @@
         color: #d89351;
     }
 
+
+    .card-title {
+        font-size: xx-large;
+        font-weight: bolder;
+        padding-bottom: 2%;
+    }
+
     .cards {
         font-size: larger;
-        font-weight: bold;
     }
 </style>

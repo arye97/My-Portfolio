@@ -1,7 +1,9 @@
 <template>
     <div id="home">
         <Header/>
+        <br/><br/><br/>
         <AboutMe/>
+        <br/>
     </div>
 </template>
 
