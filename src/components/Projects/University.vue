@@ -86,6 +86,9 @@
     }
 
     @media screen and (max-width: 1080px) {
+        .window {
+            margin: 0 2% 2%;
+        }
         .cards {
             min-width: 50%;
         }

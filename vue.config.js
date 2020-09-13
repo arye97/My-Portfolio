@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: '/My-Portfolio/',
     chainWebpack: config => {
         config.module
             .rule('vue')
