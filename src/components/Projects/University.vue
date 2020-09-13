@@ -25,7 +25,6 @@
                                     <small class="text-muted">Feb 2020 - Oct 2020</small>
                                 </template>
                             </b-card>
-
                             <b-card class="cards" title="Petitions (Client)" sub-title="Sign for your future with Petitions" :img-src="require('../../assets/petitionslayout.png')" img-alt="Image" img-top>
                                 <b-card-text>
                                     <hr/>
@@ -81,6 +80,14 @@
     }
 
     .cards {
+        margin-bottom: 5%;
+        min-width: 40%;
         font-size: larger;
+    }
+
+    @media screen and (max-width: 1080px) {
+        .cards {
+            min-width: 50%;
+        }
     }
 </style>
