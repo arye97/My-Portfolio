@@ -10,6 +10,7 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
 export default new Router({
+    mode: 'history',
     routes: [
         { path: '/', component: Home, name: 'Home' },
         { path: '/projects/personal', component: Personal, name: 'Personal' },
