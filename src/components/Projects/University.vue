@@ -17,10 +17,7 @@
                                     Java with Spring Boot.
                                 </b-card-text>
                                 <hr/>
-                                <b-col lg="12" class="pb-2"><b-button size="sm">
-                                    <router-link :to="{ name: 'Footsteps' }"
-                                                 class="nav-link">See Details</router-link>
-                                </b-button></b-col>
+                                <<b-col lg="12" class="pb-2"><b-button size="sm" tag="a" href="https://csse-s302g6.canterbury.ac.nz/prod/">Go To Site</b-button></b-col>
                                 <template v-slot:footer>
                                     <small class="text-muted">Feb 2020 - Oct 2020</small>
                                 </template>
@@ -32,7 +29,7 @@
                                     Using a RESTful API written in NodeJS.
                                 </b-card-text>
                                 <hr/>
-                                <b-col lg="12" class="pb-2"><b-button size="sm" tag="a" href="https://github.com/arye97/seng365-assignment2-client/tree/master/assignment2-client">See Details</b-button></b-col>
+                                <b-col lg="12" class="pb-2"><b-button size="sm" tag="a" href="https://github.com/arye97/seng365-assignment2-client/tree/master/assignment2-client">Project Github</b-button></b-col>
                                 <template v-slot:footer>
                                     <small class="text-muted">May 2020</small>
                                 </template>

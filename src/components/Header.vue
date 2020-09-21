@@ -26,7 +26,7 @@
             <b-navbar-item tag="div">
                 <div class="buttons">
                     <b-button tag="a"
-                              href="https://drive.google.com/file/d/1u_Rm0TnquIawEn3ZuaihG-bLmnP_Rhn3/view?usp=sharing" download
+                              href="https://drive.google.com/file/d/1XKn8ZHL8s8Xfr7A0WNdEH3I4YZYx9SAx/view?usp=sharing" download
                               type="is-danger" outlined>
                         My CV
                     </b-button>
