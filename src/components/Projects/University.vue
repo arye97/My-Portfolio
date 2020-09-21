@@ -17,7 +17,7 @@
                                     Java with Spring Boot.
                                 </b-card-text>
                                 <hr/>
-                                <<b-col lg="12" class="pb-2"><b-button size="sm" tag="a" href="https://csse-s302g6.canterbury.ac.nz/prod/">Go To Site</b-button></b-col>
+                                <b-col lg="12" class="pb-2"><b-button size="sm" tag="a" href="https://csse-s302g6.canterbury.ac.nz/prod/">Go To Site</b-button></b-col>
                                 <template v-slot:footer>
                                     <small class="text-muted">Feb 2020 - Oct 2020</small>
                                 </template>
