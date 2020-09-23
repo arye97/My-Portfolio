@@ -1,13 +1,14 @@
 <template>
     <div id="app">
-        <section>
-            <Header/>
-            <br/><br/><br/><br/><br/><br/>
-        </section>
         <section class="window">
             <div class="window">
                 <br/>
                     <div>
+                        <br/>
+                        <b-jumbotron style="background-color: whitesmoke;">
+                        <h1>What I've been working on</h1>
+                        </b-jumbotron>
+                        <hr/>
                         <b-card-group deck>
                             <b-card class="cards" title="Footsteps" sub-title="Want to plan your next mountain hike, pub crawl or fun run like you're Michael Scott? Use Footsteps!"
                                     :img-src="require('../../assets/footstepslogin.png')" img-alt="Image" img-top>
@@ -37,6 +38,38 @@
                         </b-card-group>
                     </div>
             </div>
+            <hr/>
+            <div class="window">
+                <br/>
+                <br/>
+                <div>
+                    <b-jumbotron style="background-color: whitesmoke;">
+                        <h1>Coming Soon</h1>
+                        <h2>
+                            This summer I'm going to be learning as much as I can. Starting with React and moving onto more fullstack
+                            development, using NodeJS and hosting these projects on AWS.
+                            As I'm still at University, I'm planning out what the projects are that I can work on to learn these technologies
+                            as best I can.
+                        </h2>
+                    </b-jumbotron>
+                    <hr/>
+                    <div class="coming-soon-window ">
+                        <b-card class="cards" title="Where can I talk?" sub-title="Tell us what languages you speak or want to learn, and we'll tell you where you can speak on the map!"
+                                :img-src="require('../../assets/languages.png')" img-alt="Image" img-top>
+                            <b-card-text>
+                                <hr/>
+                                For this project I want to develop the front-end in <strong>React JS using the Shards-React and DataMaps libraries.</strong>
+                                To collect data I will use the <strong>RESTCountries and MediaWiki API's.</strong>
+                                My vision is that you will be able to select as many languages that you want/do speak, and a map appears highlighting
+                                each country where those languages are spoken which when hovered over will give more information about that country.
+                            </b-card-text>
+                            <template v-slot:footer>
+                                <small class="text-muted">TBD</small>
+                            </template>
+                        </b-card>
+                    </div>
+                </div>
+            </div>
         <br/>
         </section>
         <br/>
@@ -44,10 +77,9 @@
 </template>
 
 <script>
-    import Header from '../Header';
+
     export default {
-        name: "University",
-        components: { Header }
+        name: "Projects"
     }
 </script>
 
@@ -56,19 +88,19 @@
         margin: 0 55px 25px;
         border-radius: 15px;
         min-height: 400px;
-        background:
-            linear-gradient(
-                rgba(18, 18, 18, 0.5),
-                rgba(0, 0, 0, 0.76)
-            ),
-            url('../../assets/full-screen-image.jpg');
+
         background-size: cover;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #d89351;
+
     }
 
+    h1 {
+        font-family: Vegan;
+        font-size: xx-large;
+        padding-bottom: 10px;
+    }
 
     .card-title {
         font-size: xx-large;
@@ -77,17 +109,35 @@
     }
 
     .cards {
+
+        width: 75%;
         margin-bottom: 5%;
         min-width: 40%;
         font-size: larger;
+    }
+
+    .coming-soon-window {
+        padding-left: 21%;
     }
 
     @media screen and (max-width: 1080px) {
         .window {
             margin: 0 2% 2%;
         }
+        /*.coming-soon-window {*/
+        /*    padding-left: 0%;*/
+        /*}*/
+    }
+
+    @media screen and (max-width: 800px) {
         .cards {
+            width: 100%;
             min-width: 50%;
         }
+        .coming-soon-window {
+            padding-left: 0%;
+        }
     }
+
+
 </style>

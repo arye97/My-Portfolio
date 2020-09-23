@@ -1,37 +1,60 @@
 <template>
-    <b-jumbotron>
+    <b-jumbotron class="window">
         <template v-slot:header>
-            <h1 id="intro-header">Hi! I'm Ryan</h1>
+<!--            <b-img-lazy :src="require('../assets/my-photo.jpg')" rounded fluid alt="Can you see my face?"></b-img-lazy>-->
+            <b-container>
+                <p class="hasNameFont">Ryan Franks</p>
+                <p class="hasFont">Aspiring Software Engineer</p>
+            </b-container>
+            <br/>
         </template>
-        <p id="description">
-            I'm studying towards a BSc in Computer Science at University of Canterbury, due to graduate at the end of 2020.
-            Over the last year I've been able to work on a few full-stack projects, and I've realised full-stack is the career
-            path I want to pursue.
-            <br/><br/>
-            This portfolio exists to show the work I've done with web technologies like VueJS and Java Spring.
-            <br/>
-            <br/>
-            Ryan Franks
-        </p>
-        <br/>
-        <ul id="avatar-list">
-            <li id="github-avatar">
-                <a href="https://github.com/arye97">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li id="mail-avatar">
-                <a href="mailto:ref48@uclive.ac.nz">
-                    <i class="far fa-envelope"></i>
-                </a>
-            </li>
-            <li id="linkedin-avatar">
-                <a href="https://www.linkedin.com/in/ryan-franks-156873194/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
-        </ul>
 
+        <template>
+            <div class="mt-3">
+                <b-card-group deck class="mb-1 cards" >
+                    <b-card border-variant="light" header="Who I am" align="center">
+                        <b-card-text>
+                            I'm Ryan, I'm an aspiring Software engineer in my fourth year of a BSc in Computer Science at the University
+                            of Canterbury. I'm making plans to learn new technologies over the summer and some projects to sink
+                            my time into. My goal is to become a full-stack developer in the future. <hr/>Check out my GitHub to see what
+                            I've been working on!
+
+                        </b-card-text>
+                        <b-button-toolbar id="avatar-list" fixed="top">
+                            <div id="github-avatar">
+                                <a href="https://github.com/arye97">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div id="mail-avatar">
+                                <a href="mailto:ref48@uclive.ac.nz">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                            <div id="linkedin-avatar">
+                                <a href="https://www.linkedin.com/in/ryan-franks-156873194/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </b-button-toolbar>
+                    </b-card>
+                    <b-card border-variant="light" header="What I can do" class="text-center">
+                        <b-card-text>
+                            <b-list-group>
+                                <b-list-group-item>Python</b-list-group-item>
+                                <b-list-group-item>JavaScript</b-list-group-item>
+                                <b-list-group-item>VueJS</b-list-group-item>
+                                <b-list-group-item>Java</b-list-group-item>
+                                <b-list-group-item>Spring Boot</b-list-group-item>
+                                <b-list-group-item>SQL</b-list-group-item>
+                                <b-list-group-item>Git</b-list-group-item>
+                            </b-list-group>
+                        </b-card-text>
+                    </b-card>
+                </b-card-group>
+            </div>
+        </template>
+        <br/>
     </b-jumbotron>
 
 </template>
@@ -47,37 +70,19 @@ export default {
     margin: 0 55px 25px;
     border-radius: 15px;
     min-height: 400px;
-    background:
-        linear-gradient(
-            rgba(18, 18, 18, 0.5),
-            rgba(0, 0, 0, 0.76)
-        ),
-        url('../assets/full-screen-image.jpg');
     background-size: cover;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #db6b84;
-}
-
-#intro-header {
-    margin-bottom: 0.5%;
-    font-size: 100%;
-}
-
-#description {
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 120%;
 }
 
 hr {
     padding-left: 30%;
     height: 10px;
     width: 70%;
-    background-color: #db6b84;
     border-radius: 5px;
 }
+
 
 #avatar-list {
     display: flex;
@@ -85,16 +90,16 @@ hr {
     align-items: center;
     justify-content: center;
     margin-top: 25px;
-    padding: 0;
     list-style-type: none;
 }
 
-#avatar-list li{
+#avatar-list div{
     margin: 0 15px;
     color: #6d696d;
     font-size: 200%;
     height: 60px;
     width: 60px;
+
     background: rgba(3, 8, 22, 0.69);
     line-height: 60px;
     border-radius: 30%;
@@ -102,7 +107,35 @@ hr {
     transition: 1s;
 }
 
-#avatar-list li:hover{
-    box-shadow: 0 0 18px whitesmoke;
+.window {
+    margin: 0 7.5% 25px;
+    border-radius: 15px;
+    min-height: 400px;
+    background-color: whitesmoke;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
 }
+
+#avatar-list div:hover{
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+
+.hasNameFont {
+    font-family: Vegan;
+    padding-bottom: 10px;
+}
+
+.hasFont {
+    font-family: Vegan;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 1080px) {
+    .window {
+        margin: 0 2% 2%;
+    }
+}
+
 </style>
