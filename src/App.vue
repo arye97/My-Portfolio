@@ -32,12 +32,13 @@ export default {
 
 
     #app {
-        background:
-            linear-gradient(
-                rgba(18, 18, 18, 0.5),
-                rgba(0, 0, 0, 0.76)
-            ),
-            url('./assets/full-screen-image.jpg');
+        /*background:*/
+        /*    linear-gradient(*/
+        /*        rgba(18, 18, 18, 0.5),*/
+        /*        rgba(0, 0, 0, 0.76)*/
+        /*    ),*/
+        /*    url('./assets/full-screen-image.jpg');*/
+        background: white;
         font-family: 'Montserrat', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;

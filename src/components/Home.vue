@@ -1,11 +1,11 @@
 <template>
-    <div id="home">
-        <br/>
-        <br/>
-        <AboutMe/>
-        <br/>
-        <br/>
-        <Projects/>
+    <div>
+        <div id="aboutMe">
+            <AboutMe/>
+        </div>
+        <div id="projects">
+            <Projects/>
+        </div>
         <ContactMe/>
     </div>
 </template>
@@ -16,11 +16,19 @@
     import ContactMe from "../components/ContactMe";
     export default {
         name: "Home",
-        components: {ContactMe, AboutMe, Projects }
+        components: {ContactMe, AboutMe, Projects}
     }
 </script>
 
 <style >
+
+    /*#aboutMe {*/
+    /*    background: linear-gradient(*/
+    /*        rgba(18, 18, 18, 0.5),*/
+    /*        rgba(0, 0, 0, 0.76)*/
+    /*    ),*/
+    /*    url('../assets/pexels-delcho-dichev-517884.jpg');*/
+    /*}*/
 
     h1 {
         font-family: 'Montserrat', sans-serif;

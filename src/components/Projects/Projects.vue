@@ -1,14 +1,12 @@
 <template>
     <div id="app">
-        <section class="window">
+        <section>
             <div class="window">
-                <br/>
                     <div>
                         <br/>
-                        <b-jumbotron style="background-color: whitesmoke;">
-                        <h1>What I've been working on</h1>
+                        <b-jumbotron class="bg-transparent">
+                        <h1 class="titleText">What I've been working on</h1>
                         </b-jumbotron>
-                        <hr/>
                         <b-card-group deck>
                             <b-card class="cards" title="Footsteps" sub-title="Want to plan your next mountain hike, pub crawl or fun run like you're Michael Scott? Use Footsteps!"
                                     :img-src="require('../../assets/footstepslogin.png')" img-alt="Image" img-top>
@@ -38,22 +36,19 @@
                         </b-card-group>
                     </div>
             </div>
-            <hr/>
-            <div class="window">
-                <br/>
-                <br/>
+            <div class="window comingSoon">
                 <div>
-                    <b-jumbotron style="background-color: whitesmoke;">
-                        <h1>Coming Soon</h1>
-                        <h2>
+                    <b-jumbotron class="bg-transparent" style="margin-top: -5%;">
+                        <h1 >Coming Soon</h1>
+                        <br/>
+                        <h2 class="textSpecial">
                             This summer I'm going to be learning as much as I can. Starting with React and moving onto more fullstack
                             development, using NodeJS and hosting these projects on AWS.
                             As I'm still at University, I'm planning out what the projects are that I can work on to learn these technologies
                             as best I can.
                         </h2>
                     </b-jumbotron>
-                    <hr/>
-                    <div class="coming-soon-window ">
+                    <div class="coming-soon-window">
                         <b-card class="cards" title="Where can I talk?" sub-title="Tell us what languages you speak or want to learn, and we'll tell you where you can speak on the map!"
                                 :img-src="require('../../assets/languages.png')" img-alt="Image" img-top>
                             <b-card-text>
@@ -77,29 +72,45 @@
 </template>
 
 <script>
-
     export default {
         name: "Projects"
     }
 </script>
 
 <style scoped>
-    .window{
-        margin: 0 55px 25px;
-        border-radius: 15px;
-        min-height: 400px;
 
-        background-size: cover;
+    #app {
+        background:
+            linear-gradient(
+                rgba(18, 18, 18, 0.5),
+                rgba(0, 0, 0, 0.76)
+            ),
+            url('../../assets/pexels-innermost-limits-3894157.jpg');
+    }
+
+
+    .window{
+
+        margin: 0 2% 2%;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
 
     }
 
+    .textSpecial {
+        color: white;
+        font-size: large;
+        text-align: center;
+        max-width: 75%;
+        padding-left: 25%;
+    }
+
     h1 {
+        /*color: #e84f70;*/
+        color: white;
         font-family: Vegan;
-        font-size: xx-large;
-        padding-bottom: 10px;
+        font-size: xxx-large;
     }
 
     .card-title {

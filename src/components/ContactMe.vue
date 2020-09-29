@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <b-jumbotron class="jumbo" >
+    <div id="getBackground">
+        <b-jumbotron class="jumbo" style="margin-top: 5%;">
             <h1 class="hasFont">Contact Me</h1>
             <h1>Email : ref48@uclive.ac.nz</h1>
             <h1>Github : github.com/arye97</h1>
@@ -54,5 +54,13 @@
         font-family: Vegan;
         font-size: xx-large;
         padding-bottom: 10px;
+    }
+    #getBackground {
+        background: linear-gradient(
+            rgba(18, 18, 18, 0.5),
+            rgba(0, 0, 0, 0.76)
+        ),
+        url('../assets/pexels-delcho-dichev-517884.jpg');
+        overflow: auto;
     }
 </style>
