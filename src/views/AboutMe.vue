@@ -1,57 +1,35 @@
 <template >
-    <div id="aboutMeBackground">
+    <div id="app">
         <b-jumbotron class="window bg-transparent">
             <template v-slot:header>
                 <b-container>
-                    <p class="hasNameFont">Ryan Franks</p>
-                    <p class="hasFont">Aspiring Software Engineer</p>
+                  <p class="hasNameFont">Hi, I'm Ryan</p>
+                  <p class="hasSmallerNameFont">A Software Engineer from NZ</p>
                 </b-container>
-                <br/>
             </template>
             <template v-slot:lead>
-                <b-row>
-                    <b-col lg>
-                        <h3 class="myText">I'm Ryan, I'm an aspiring Software engineer in my fourth year of a BSc in Computer Science at the University
-                            of Canterbury. I'm making plans to learn new technologies over the summer and some projects to sink
-                            my time into. My goal is to become a full-stack developer in the future, and to use this site as a place to push forward my knowledge
-                            and experience.
-                        </h3>
-                    </b-col>
-                    <b-col lg>
-                        <h3 class="myText">
-                            I have a keen interest in full stack development, and this summer I want to get my hands dirty with a full
-                            MERN stack application. I'm also interested in Artificial Intelligence, and want to make a genetic model using
-                            Tensorflow.
-                            <br/> <br/>
-                            I've had experience using JavaScript and frameworks like VueJS and Node. Along with developing an
-                            API in Java using the Spring Boot framework. I've programmed in Python and want to expand my knowledge in it.
-                        </h3>
-                    </b-col>
-                </b-row>
-                <div class="myText">
+                <div class="">
                     <hr/>
-                    Check out my GitHub to see what
-                    I've been working on!
-
-                    <b-button-toolbar class="align-items-center" id="avatar-list" fixed="top">
+<!--                    Check out my GitHub to see what I've been working on!-->
+                    <b-button-toolbar class="align-items-center " id="avatar-list" fixed="top">
                         <div id="github-avatar">
-                            <a href="https://github.com/arye97">
+                            <a target="_blank" href="https://github.com/arye97">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                         <div id="mail-avatar">
-                            <a href="mailto:ref48@uclive.ac.nz">
+                            <a href="mailto:ryan.ethan.franks@gmail.com">
                                 <i class="far fa-envelope"></i>
                             </a>
                         </div>
                         <div id="linkedin-avatar">
-                            <a href="https://www.linkedin.com/in/ryan-franks-156873194/">
+                            <a target="_blank" href="https://www.linkedin.com/in/ryan-franks-156873194/">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </div>
-                        <div>
-                            <a href="https://drive.google.com/file/d/1djBKXoBNdrEuTy-NIzV8BScg2iukZ-pE/view?usp=sharing" download>CV</a>
-                        </div>
+<!--                        <div>-->
+<!--                            <a href="https://drive.google.com/file/d/1djBKXoBNdrEuTy-NIzV8BScg2iukZ-pE/view?usp=sharing" download>CV</a>-->
+<!--                        </div>-->
                     </b-button-toolbar>
                 </div>
             </template>
@@ -67,15 +45,6 @@ export default {
 
 <style scoped>
 
-#aboutMeBackground {
-    background: linear-gradient(
-        rgba(18, 18, 18, 0.5),
-        rgba(0, 0, 0, 0.76)
-    ),
-    url('../assets/pexels-delcho-dichev-517884.jpg');
-    overflow: auto;
-}
-
 .jumbotron {
     margin: 0 55px 25px;
     border-radius: 15px;
@@ -86,15 +55,24 @@ export default {
     text-align: center;
 }
 
+i {
+  color: #194350;
+}
+
 hr {
+    margin-top: 10%;
+    margin-bottom: 5%;
     padding-left: 30%;
     height: 10px;
     width: 70%;
     border-radius: 5px;
+    color: #CDB699;
+    background-color: #CDB699;
 }
 
 
 #avatar-list {
+    color: #e84f70;
     display: flex;
     text-align: center;
     align-items: center;
@@ -104,13 +82,15 @@ hr {
 }
 
 #avatar-list div{
+
     margin: 0 7px;
-    color: #6d696d;
+    solid-color: #e84f70;
+    color: #e84f70;
     font-size: 200%;
     height: 60px;
     width: 60px;
 
-    background: rgba(3, 8, 22, 0.69);
+    /*background: rgba(3, 8, 22, 0.69);*/
     line-height: 60px;
     border-radius: 30%;
     cursor: pointer;
@@ -118,7 +98,7 @@ hr {
 }
 
 .window {
-    margin: 0 7.5% 25px;
+    margin: 0 7.5% 10%;
     border-radius: 15px;
     min-height: 400px;
     /*background-color: whitesmoke;*/
@@ -129,13 +109,20 @@ hr {
 }
 
 #avatar-list div:hover{
-    box-shadow: 0px 0px 10px whitesmoke;
+    box-shadow: 0px 0px 10px #e84f70;
 }
 
 .hasNameFont {
     color: #e84f70;
     font-family: Vegan;
+    padding-top: 10%;
     padding-bottom: 10px;
+}
+
+.hasSmallerNameFont {
+  color: #e84f70;
+  font-family: Vegan;
+  font-size: xx-large;
 }
 
 .myText {
@@ -150,8 +137,18 @@ hr {
 
 @media screen and (max-width: 1080px) {
     .window {
-        margin: 0 2% 2%;
+      margin: 0 2% 10%;
     }
+}
+
+@media screen and (max-width: 800px) {
+  .window {
+    margin: 30% 2% 50%;
+  }
+}
+
+p {
+  margin-bottom: 2.5%;
 }
 
 </style>

@@ -3,6 +3,9 @@
         <div id="aboutMe">
             <AboutMe/>
         </div>
+        <div id="work">
+          <Work/>
+        </div>
         <div id="projects">
             <Projects/>
         </div>
@@ -12,11 +15,11 @@
 
 <script>
     import AboutMe from "../views/AboutMe";
-    import Projects from "../components/Projects/Projects";
-    import ContactMe from "../components/ContactMe";
+    import Projects from "./Projects";
+    import Work from "@/components/Work";
     export default {
         name: "Home",
-        components: {ContactMe, AboutMe, Projects}
+        components: {Work, AboutMe, Projects}
     }
 </script>
 

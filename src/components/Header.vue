@@ -6,20 +6,15 @@
             </b-navbar-item>
         </template>
         <template slot="start">
+<!--            <b-navbar-item>-->
+<!--                <router-link :to="{ name: 'Home' }"-->
+<!--                             class="nav-link">About Me</router-link>-->
+<!--            </b-navbar-item>-->
             <b-navbar-item>
-                <router-link :to="{ name: 'Home' }"
-                             class="nav-link">About Me</router-link>
+              <router-link :to="{ name: 'Projects' }"
+                           class="nav-link">My Projects</router-link>
             </b-navbar-item>
-            <b-navbar-dropdown label="My Projects">
-<!--                <b-navbar-item>-->
-<!--                    <router-link :to="{ name: 'Personal' }"-->
-<!--                                 class="nav-link">Personal</router-link>-->
-<!--                </b-navbar-item>-->
-                <b-navbar-item>
-                    <router-link :to="{ name: 'University' }"
-                                 class="nav-link">University</router-link>
-                </b-navbar-item>
-            </b-navbar-dropdown>
+
         </template>
 
         <template slot="end">

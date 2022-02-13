@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -28,9 +27,6 @@ export default {
         url(./fonts/VeganStylePersonalUse-5Y58.ttf) format("truetype");
     }
 
-
-
-
     #app {
         /*background:*/
         /*    linear-gradient(*/
@@ -38,11 +34,12 @@ export default {
         /*        rgba(0, 0, 0, 0.76)*/
         /*    ),*/
         /*    url('./assets/full-screen-image.jpg');*/
-        background: white;
+        background: #FEFBF3;
         font-family: 'Montserrat', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
+
     }
 
 </style>
